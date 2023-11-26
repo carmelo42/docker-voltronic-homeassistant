@@ -1,3 +1,20 @@
+For Raspberry Pi 3 use, add to /etc/rc.local to initialize serial port
+
+```
+sudo stty -F /dev/ttyUSB0 sane
+sudo stty -F /dev/ttyUSB0 2400 raw -echo
+```
+
+To the end of /boot/config.txt add theses lines:
+
+```
+[all]
+enable_uart=1
+dtoverlay=disable-bt
+max_usb_current=1
+```
+
+
 This is a fork from ned-kelly version with improved changes from  kchiem, dilyanpalauzov, nrm21 and many more:
 - no more needed fixes responses for QMOD, QPIRI... program it will find them.
 - changes regarding mqtt broker compatibility, topics, auto-discovery...

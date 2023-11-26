@@ -1,14 +1,14 @@
 {
-    "server": "192.168.0.2",
+    "server": "192.168.0.199",
     "port": "1883",
     "topic": "homeassistant",
-    "devicename": "mpp",
+    "devicename": "mpp2",
     "manufacturer": "MPPSolar",
     "model": "PIP3024MSXE",
     "serial": "92331908103079",
     "ver": "20.13",
-    "username": "mqtt",
-    "password": "broker",
+    "username": "toto",
+    "password": "totototo",
     "influx": {
         "enabled": "false",
         "host": "http://[INFLUX_IP_OR_URL]:8086", 
